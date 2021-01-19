@@ -111,7 +111,7 @@ void multiplication()
 	printf("\n\t\tEnter two numbers for multiplication: ");
 	scanf("%d %d", &a, &b);
 	mul = a*b;
-	printf("\n\t\tmultiplying %d from %d, we get %d\n", a, b, mul);
+	printf("\n\t\tmultiplying %d with %d, we get %d\n", a, b, mul);
 }
 void division()
 {
@@ -119,7 +119,7 @@ void division()
 	printf("\n\t\tEnter two numbers for division: ");
 	scanf("%d %d", &a, &b);
 	div = a/b;
-	printf("\n\t\tdivision %d from %d, we get %d\n", a, b, div);
+	printf("\n\t\tdivision %d with %d, we get %d\n", a, b, div);
 }
 void modulus()
 {
@@ -143,17 +143,17 @@ void factorial()
 {
 	int i,fact=1,num;
 	printf("\n\t\tEnter a number to find factorial: ");
-	scanf("%d", &i);
+	scanf("%d", &num);
 	for(i=1;i<=num;i++)
 	{
 		fact=fact*i;
 	}
-	printf("\n\t\tfactorial of %dis %df\n",num, fact);
+	printf("\n\t\tfactorial of %d is %d\n",num, fact);
 }
 
 void squareRoot()
 {
-	int num,squareRoot;
+	double num,squareRoot;
 	printf("\n\t\tEnter a number to find squareRoot: ");
 	scanf("%lf", &num);
 	squareRoot=sqrt(num);
